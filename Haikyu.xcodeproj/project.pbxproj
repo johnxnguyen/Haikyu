@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE03433119F6D38000363489 /* SyllableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03433019F6D38000363489 /* SyllableTextField.swift */; };
+		EE49376B19ED695E0024B178 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = EE49376A19ED695E0024B178 /* data.db */; };
 		EE83436B19EC784D000B2A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83436A19EC784D000B2A41 /* AppDelegate.swift */; };
 		EE83436D19EC784D000B2A41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83436C19EC784D000B2A41 /* ViewController.swift */; };
 		EE83437019EC784D000B2A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE83436E19EC784D000B2A41 /* Main.storyboard */; };
 		EE83437219EC784D000B2A41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE83437119EC784D000B2A41 /* Images.xcassets */; };
 		EE83437519EC784D000B2A41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE83437319EC784D000B2A41 /* LaunchScreen.xib */; };
 		EE83438119EC784D000B2A41 /* HaikyuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83438019EC784D000B2A41 /* HaikyuTests.swift */; };
+		EE83439119EC7DA0000B2A41 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83438F19EC7DA0000B2A41 /* SQLiteDB.swift */; };
+		EE83439219EC7DA0000B2A41 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83439019EC7DA0000B2A41 /* String-Extras.swift */; };
+		EE83439519EC7E7D000B2A41 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE83439419EC7E7D000B2A41 /* libsqlite3.0.dylib */; };
+		EED8D36A19EF1332007794D6 /* SyllableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8D36919EF1332007794D6 /* SyllableParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE03433019F6D38000363489 /* SyllableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SyllableTextField.swift; path = Classes/SyllableTextField.swift; sourceTree = "<group>"; };
+		EE49376A19ED695E0024B178 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		EE83436519EC784D000B2A41 /* Haikyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haikyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE83436919EC784D000B2A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE83436A19EC784D000B2A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,11 @@
 		EE83437A19EC784D000B2A41 /* HaikyuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaikyuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE83437F19EC784D000B2A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE83438019EC784D000B2A41 /* HaikyuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaikyuTests.swift; sourceTree = "<group>"; };
+		EE83438E19EC7DA0000B2A41 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EE83438F19EC7DA0000B2A41 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		EE83439019EC7DA0000B2A41 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		EE83439419EC7E7D000B2A41 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		EED8D36919EF1332007794D6 /* SyllableParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SyllableParser.swift; path = Classes/SyllableParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE83439519EC7E7D000B2A41 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +73,7 @@
 		EE83435C19EC784D000B2A41 = {
 			isa = PBXGroup;
 			children = (
+				EE83439419EC7E7D000B2A41 /* libsqlite3.0.dylib */,
 				EE83436719EC784D000B2A41 /* Haikyu */,
 				EE83437D19EC784D000B2A41 /* HaikyuTests */,
 				EE83436619EC784D000B2A41 /* Products */,
@@ -79,9 +94,9 @@
 			children = (
 				EE83436A19EC784D000B2A41 /* AppDelegate.swift */,
 				EE83436C19EC784D000B2A41 /* ViewController.swift */,
+				EE03433019F6D38000363489 /* SyllableTextField.swift */,
+				EED8D36919EF1332007794D6 /* SyllableParser.swift */,
 				EE83436E19EC784D000B2A41 /* Main.storyboard */,
-				EE83437119EC784D000B2A41 /* Images.xcassets */,
-				EE83437319EC784D000B2A41 /* LaunchScreen.xib */,
 				EE83436819EC784D000B2A41 /* Supporting Files */,
 			);
 			path = Haikyu;
@@ -90,7 +105,11 @@
 		EE83436819EC784D000B2A41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE83439319EC7DA6000B2A41 /* SQLite Wrapper */,
+				EE83437119EC784D000B2A41 /* Images.xcassets */,
+				EE83437319EC784D000B2A41 /* LaunchScreen.xib */,
 				EE83436919EC784D000B2A41 /* Info.plist */,
+				EE49376A19ED695E0024B178 /* data.db */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +129,16 @@
 				EE83437F19EC784D000B2A41 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE83439319EC7DA6000B2A41 /* SQLite Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				EE83438E19EC7DA0000B2A41 /* Bridging-Header.h */,
+				EE83438F19EC7DA0000B2A41 /* SQLiteDB.swift */,
+				EE83439019EC7DA0000B2A41 /* String-Extras.swift */,
+			);
+			name = "SQLite Wrapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE83437019EC784D000B2A41 /* Main.storyboard in Resources */,
+				EE49376B19ED695E0024B178 /* data.db in Resources */,
 				EE83437519EC784D000B2A41 /* LaunchScreen.xib in Resources */,
 				EE83437219EC784D000B2A41 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE83439119EC7DA0000B2A41 /* SQLiteDB.swift in Sources */,
+				EED8D36A19EF1332007794D6 /* SyllableParser.swift in Sources */,
+				EE83439219EC7DA0000B2A41 /* String-Extras.swift in Sources */,
 				EE83436D19EC784D000B2A41 /* ViewController.swift in Sources */,
 				EE83436B19EC784D000B2A41 /* AppDelegate.swift in Sources */,
+				EE03433119F6D38000363489 /* SyllableTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +375,7 @@
 				INFOPLIST_FILE = Haikyu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Haikyu/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -351,6 +386,7 @@
 				INFOPLIST_FILE = Haikyu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Haikyu/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +443,7 @@
 				EE83438619EC784D000B2A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE83438719EC784D000B2A41 /* Build configuration list for PBXNativeTarget "HaikyuTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +452,7 @@
 				EE83438919EC784D000B2A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
