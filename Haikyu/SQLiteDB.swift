@@ -35,7 +35,7 @@ let SQLITE_DATE = SQLITE_NULL + 1
 			return value as String
 		case SQLITE_BLOB:
 			let str = NSString(data:value as NSData, encoding:NSUTF8StringEncoding)
-			return str
+			return str!
 		case SQLITE_NULL:
 			return ""
 		case SQLITE_DATE:
@@ -56,7 +56,7 @@ let SQLITE_DATE = SQLITE_NULL + 1
 			return str.integerValue
 		case SQLITE_BLOB:
 			let str = NSString(data:value as NSData, encoding:NSUTF8StringEncoding)
-			return str.integerValue
+			return str!.integerValue
 		case SQLITE_NULL:
 			return 0
 		case SQLITE_DATE:
@@ -75,7 +75,7 @@ let SQLITE_DATE = SQLITE_NULL + 1
 			return str.doubleValue
 		case SQLITE_BLOB:
 			let str = NSString(data:value as NSData, encoding:NSUTF8StringEncoding)
-			return str.doubleValue
+			return str!.doubleValue
 		case SQLITE_NULL:
 			return 0.0
 		case SQLITE_DATE:
@@ -120,7 +120,7 @@ let SQLITE_DATE = SQLITE_NULL + 1
 			let str = NSString(data:value as NSData, encoding:NSUTF8StringEncoding)
 			let fmt = NSDateFormatter()
 			fmt.dateFormat = "yyyy-MM-dd HH:mm:ss"
-			return fmt.dateFromString(str)
+			return fmt.dateFromString(str!)
 		case SQLITE_NULL:
 			return nil
 		case SQLITE_DATE:
@@ -493,7 +493,7 @@ let SQLITE_DATE = SQLITE_NULL + 1
 			// Is this a text date
 			let txt = UnsafePointer<Int8>(sqlite3_column_text(stmt, index))
 			if txt != nil {
-				let buf = NSString(CString:txt, encoding:NSUTF8StringEncoding) as NSString
+				let buf = NSString(CString:txt, encoding:NSUTF8StringEncoding) as NSString!
 				let set = NSCharacterSet(charactersInString: "-:")
 				let range = buf.rangeOfCharacterFromSet(set)
 				if range.location != NSNotFound {
